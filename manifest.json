@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Price Checker",
+  "version": "1.0",
+  "description": "Compare prices from the dm shop between Austria and Germany.",
+  "content_scripts": [
+    {
+      "js": ["scripts/contentAT.js"],
+      "matches": [
+        "https://www.dm.at/*"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "host_permissions": [
+    "https://products.dm.de/product/*"
+  ]
+}
