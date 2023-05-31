@@ -5,7 +5,7 @@
   "description": "Compare prices from web shops between Austria and Germany.",
   "content_scripts": [
     {
-      "js": ["scripts/contentAT.js"],
+      "js": ["scripts/content/dm/at/content.js"],
       "matches": ["https://www.dm.at/*"]
     },
     {
