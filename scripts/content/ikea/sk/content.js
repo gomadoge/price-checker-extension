@@ -40,7 +40,7 @@ async function refreshPrice() {
 
   if (localPrice) {
     const priceElement = getPriceElement();
-    priceElement.innerHTML = "SK: € " + localPrice + " <br /> AT: € " + (otherPriceAT ?? "N/A") + " <br /> SK: € " + (otherPriceDE ?? "N/A");
+    priceElement.innerHTML = "SK: € " + localPrice + " <br /> AT: € " + (otherPriceAT ?? "N/A") + " <br /> DE: € " + (otherPriceDE ?? "N/A");
   }
 }
 
