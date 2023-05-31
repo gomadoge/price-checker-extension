@@ -6,15 +6,11 @@
   "content_scripts": [
     {
       "js": ["scripts/contentAT.js"],
-      "matches": [
-        "https://www.dm.at/*"
-      ]
+      "matches": ["https://www.dm.at/*"]
     },
     {
       "js": ["scripts/content/ikea/at/content.js"],
-      "matches": [
-        "https://www.ikea.com/at/de/*"
-      ]
+      "matches": ["https://www.ikea.com/at/de/*"]
     }
   ],
   "background": {
