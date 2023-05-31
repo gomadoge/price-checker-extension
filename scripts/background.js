@@ -8,6 +8,13 @@ chrome.runtime.onMessage.addListener((request, _, sendResponse) => {
       .catch(_ => sendResponse({ found: false }));
 
     return true;
+  } else if (request.url) {
+    fetch(request.url)
+      .then(response => response.text())
+      .then(text => sendResponse({ found: true, text: text}))
+      .catch(_ => sendResponse({ found: false }))
+
+    return true;
   }
 });
 

@@ -9,12 +9,23 @@
       "matches": [
         "https://www.dm.at/*"
       ]
+    },
+    {
+      "js": ["scripts/content/ikea/at/content.js"],
+      "matches": [
+        "https://www.ikea.com/at/de/*"
+      ]
     }
   ],
   "background": {
     "service_worker": "scripts/background.js"
   },
   "host_permissions": [
-    "https://products.dm.de/product/*"
-  ]
+    "https://products.dm.de/product/*",
+    "https://www.ikea.com/de/de/*"
+  ],
+  "web_accessible_resources": [{
+    "resources": ["scripts/helper/extract_utag_data.js"],
+    "matches": ["https://www.ikea.com/*"]
+  }]
 }
