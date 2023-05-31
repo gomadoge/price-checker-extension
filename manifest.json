@@ -9,8 +9,20 @@
       "matches": ["https://www.dm.at/*"]
     },
     {
+      "js": ["scripts/content/dm/de/content.js"],
+      "matches": ["https://www.dm.de/*"]
+    },
+    {
       "js": ["scripts/content/ikea/at/content.js"],
       "matches": ["https://www.ikea.com/at/de/*"]
+    },
+    {
+      "js": ["scripts/content/ikea/de/content.js"],
+      "matches": ["https://www.ikea.com/de/de/*"]
+    },
+    {
+      "js": ["scripts/content/ikea/sk/content.js"],
+      "matches": ["https://www.ikea.com/sk/sk/*"]
     }
   ],
   "background": {

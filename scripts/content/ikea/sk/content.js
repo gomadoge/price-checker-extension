@@ -35,12 +35,12 @@ async function getLocalPrice() {
 
 async function refreshPrice() {
   const localPrice = await getLocalPrice();
-  const otherPriceDE = await fetchPrice(document.location.href.replace("/at/de", "/de/de"));
-  const otherPriceSK = await fetchPrice(document.location.href.replace("/at/de", "/sk/sk"));
+  const otherPriceAT = await fetchPrice(document.location.href.replace("/sk/sk", "/at/de"));
+  const otherPriceDE = await fetchPrice(document.location.href.replace("/sk/sk", "/de/de"));
 
   if (localPrice) {
     const priceElement = getPriceElement();
-    priceElement.innerHTML = "AT: € " + localPrice + " <br /> DE: € " + (otherPriceDE ?? "N/A") + " <br /> SK: € " + (otherPriceSK ?? "N/A");
+    priceElement.innerHTML = "SK: € " + localPrice + " <br /> AT: € " + (otherPriceAT ?? "N/A") + " <br /> DE: € " + (otherPriceDE ?? "N/A");
   }
 }
 
