@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Price Checker",
   "version": "1.0",
-  "description": "Compare prices from the dm shop between Austria and Germany.",
+  "description": "Compare prices from web shops between Austria and Germany.",
   "content_scripts": [
     {
       "js": ["scripts/contentAT.js"],
