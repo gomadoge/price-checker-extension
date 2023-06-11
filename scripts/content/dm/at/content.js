@@ -24,7 +24,7 @@ function getGtin() {
 
 function getPriceElement() {
   // Oh Lawd He Comin'
-  const xpathPriceElement = "/html/body/div[2]/div/main/div[2]/div[2]/div[1]/div/div/div/div/div[1]/div[2]/div[2]/div/div[1]/div[1]/div[1]/div/span";
+  const xpathPriceElement = "/html/body/div[1]/div/main/div[2]/div[2]/div[1]/div/div/div/div/div[1]/div[2]/div[2]/div/div[1]/div[1]/div[1]/div/span";
   return getElementByXpath(xpathPriceElement)[0];
 }
 
